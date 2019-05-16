@@ -31,7 +31,7 @@ New-AzRoleDefinition [-Role] <PSRoleDefinition> [-DefaultProfile <IAzureContextC
 The New-AzRoleDefinition cmdlet creates a custom role in Azure Role-Based Access Control.
 Provide a role definition as an input to the command as a JSON file or a PSRoleDefinition object.
 The input role definition MUST contain the following properties:
-1) DisplayName: the name of the custom role
+1) Name: the name of the custom role
 2) Description: a short description of the role that summarizes the access that the role grants.
 3) Actions: the set of operations to which the custom role grants access.
 Use Get-AzProviderOperation to get the operation for Azure resource providers that can be secured using Azure RBAC.
